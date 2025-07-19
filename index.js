@@ -192,3 +192,40 @@ function getNow() {
   } else now += "-" + date.getDate();
   $("#dateOrder").val(now);
 }
+
+function activateSlider() {
+  const doing = parseInt(event.target.getAttribute("data-doing"));
+  let currentPos = parseInt(
+    document
+      .querySelector(".displayToSlide")
+      .getAttribute("data-current-position")
+  );
+  if ((doing === -1) & (currentPos === 1)) return;
+  if ((doing === 1) & (currentPos === 3)) return;
+
+  let activePoint = document.getElementById(`point${currentPos}`);
+  activePoint.classList.toggle("activePoint");
+  if (doing === 1) {
+    currentPos += 1;
+    activePoint = document.getElementById(`point${currentPos}`);
+    activePoint.classList.toggle("activePoint");
+    const itemSlide = document.querySelectorAll(".itemSlide");
+    itemSlide.forEach((el) => {
+      el.style.transform = `translateX(${-148 * (currentPos - 1)}px)`;
+    });
+    document
+      .querySelector(".displayToSlide")
+      .setAttribute("data-current-position", currentPos);
+  } else {
+    currentPos -= 1;
+    activePoint = document.getElementById(`point${currentPos}`);
+    activePoint.classList.toggle("activePoint");
+    const itemSlide = document.querySelectorAll(".itemSlide");
+    itemSlide.forEach((el) => {
+      el.style.transform = `translateX(${-148 * (currentPos - 1)}px)`;
+    });
+    document
+      .querySelector(".displayToSlide")
+      .setAttribute("data-current-position", currentPos);
+  }
+}

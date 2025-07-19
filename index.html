@@ -18,6 +18,8 @@
       <div class="phoneText">
         Телефон:<a rel="stylesheet" href="tel:88001231212">8(800)-123-12-12</a>
       </div>
+      <div class="city mobile">Москва</div>
+      <img class="mobile" src="./source/img/userIcon.svg" alt="User Icon" />
     </header>
     <div class="preview">
       <div class="contantPreview">
@@ -30,13 +32,11 @@
             <div class="containerPrice">
               <div class="priceText">Стоимость:</div>
               <div class="price">1500₽</div>
-              <div class="triangle"></div>
             </div>
-            <img
-              class="discount"
-              src="./source/img/Group 6.png"
-              alt="Discounts"
-            />
+            <div class="triangle"></div>
+            <div class="discount">
+              <img src="./source/img/percent.png" alt="Discounts" />
+            </div>
           </div>
           <button class="orderPlace" onclick="MakeOrder()">
             Забронировать место
@@ -45,42 +45,105 @@
       </div>
     </div>
     <div class="mainContentContainer">
-      <div class="conintainerTableHead">
+      <div class="containerTableHead">
         <div>
-          <h1 class="headForMain">Фотосессия в вертолете</h1>
+          <h1 class="headForMain desktop">Фотосессия в вертолете</h1>
           <div class="description">
             Полет на вертолете это прекрасная возможность получить новые
             ощущения! А наш замечательный фотограф запечатлит лучшие моменты
           </div>
-          <div class="listPossibilities">
-            <img src="./source/img/time.png" alt="Time" />
-            <div class="listText">3 часа съемки</div>
+          <div class="desktop">
+            <div class="listPossibilities">
+              <img src="./source/img/time.png" alt="Time" />
+              <div class="listText">3 часа съемки</div>
+            </div>
+            <span class="listPossibilities">
+              <img src="./source/img/photo.png" alt="Camera" />
+              <div class="listText">Более 50 фотографий</div>
+            </span>
+            <span class="listPossibilities">
+              <img src="./source/img/mapPinMarked.png" alt="map pin marked" />
+              <div class="listText">Москва</div>
+            </span>
+            <span class="listPossibilities">
+              <img src="./source/img/speechBubble.png" alt="speech bubble" />
+              <div class="listText">Готовы ответить на любые вопросы</div>
+            </span>
           </div>
-          <span class="listPossibilities">
-            <img src="./source/img/photo.png" alt="Camera" />
-            <div class="listText">Более 50 фотографий</div>
-          </span>
-          <span class="listPossibilities">
-            <img src="./source/img/mapPinMarked.png" alt="map pin marked" />
-            <div class="listText">Москва</div>
-          </span>
-          <span class="listPossibilities">
-            <img src="./source/img/speechBubble.png" alt="speech bubble" />
-            <div class="listText">Готовы ответить на любые вопросы</div>
-          </span>
+          <div class="mobile">
+            <div class="listPossibilities">
+              <img src="./source/img/timeMobile.png" alt="Time" />
+              <div class="listText">3 часа съемки</div>
+            </div>
+            <span class="listPossibilities">
+              <img src="./source/img/lang.svg" alt="language" />
+              <div class="listText">Русский</div>
+            </span>
+            <span class="listPossibilities">
+              <img src="./source/img/price.svg" alt="price" />
+              <div class="listText">от <strong>850$</strong></div>
+            </span>
+            <span class="listPossibilities">
+              <img src="./source/img/pointMapMobile.png" alt="Poing map" />
+              <div class="listText">Дубаи</div>
+            </span>
+            <span class="listPossibilities">
+              <img src="./source/img/cameraMob.svg" alt="Camera" />
+              <div class="listText">Более 50 фотографий</div>
+            </span>
+          </div>
+
           <div class="lineList"></div>
-          <span class="listPossibilities">
-            <img src="./source/img/cupWithStars.png" alt="cup with stars" />
-            <div class="ratingText">Более 50 отзывов с оценкой</div>
-            <img src="./source/img/fiveStars.png" alt="five stars" />
+          <span class="listPossibilities desktop">
+            <img
+              class="desktop"
+              src="./source/img/cupWithStars.png"
+              alt="cup with stars"
+            />
+            <div class="ratingText">
+              Более <strong>50</strong> отзывов с оценкой
+            </div>
+            <img
+              class="stars"
+              src="./source/img/fiveStars.png"
+              alt="five stars"
+            />
+          </span>
+          <span class="listPossibilities mobile" id="mobileListPossibilities">
+            <img
+              class="mobile"
+              src="./source/img/cupStarsMobile.svg"
+              alt="cup with stars"
+            />
+            <div class="mobileContainerFeedBack">
+              <div class="ratingText">
+                Более <strong>150</strong> отзывов с оценкой
+              </div>
+              <img class="" src="./source/img/fiveStars.png" alt="five stars" />
+            </div>
           </span>
           <div class="lineList"></div>
         </div>
-        <img src="./source/img/headTable.svg" alt="Helicopter flight" />
+        <img
+          class="helicopterKiss"
+          src="./source/img/headTable.svg"
+          alt="Helicopter flight"
+        />
+        <h1 class="headForMain mobile">Фотосессия в вертолете</h1>
       </div>
       <div class="containerPhoto">
-        <span class="titlePhotos"> Фотографии пакета: </span>
-        <div class="photos">
+        <div class="titlePhotos">
+          Фотографии пакета<span class="desktop">:</span>
+        </div>
+        <div class="sliderWindow mobile">
+          <div class="photos">
+            <img src="./source/img/photo4.png" alt="photo" />
+            <img src="./source/img/photo3.png" alt="photo" />
+            <img src="./source/img/photo2.png" alt="photo" />
+            <img src="./source/img/photo1.png" alt="photo" />
+          </div>
+        </div>
+        <div class="photos desktop">
           <img src="./source/img/photo1.png" alt="photo" />
           <img src="./source/img/photo2.png" alt="photo" />
           <img src="./source/img/photo3.png" alt="photo" />
@@ -89,7 +152,7 @@
           <img src="./source/img/photo4.png" alt="photo" />
           <img src="./source/img/photo2.png" alt="photo" />
           <img src="./source/img/photo3.png" alt="photo" />
-          <div id="containerPhoto">
+          <div id="containerPhoto" class="desktop">
             <img src="./source/img/photo1.png" alt="photo" />
             <img src="./source/img/photo2.png" alt="photo" />
             <img src="./source/img/photo3.png" alt="photo" />
@@ -101,7 +164,7 @@
           </div>
         </div>
         <div
-          class="showAll"
+          class="showAll desktop"
           onclick="showMoreinf()"
           id="buttonShowPhotos"
           data-parent="containerPhoto"
@@ -112,7 +175,7 @@
         >
           Показать все фото
         </div>
-        <div class="line"></div>
+        <div class="line desktop"></div>
       </div>
       <div class="aboutOrganizer">
         <div class="">
@@ -169,10 +232,11 @@
                 впечатления о Дубае !
               </span>
               <span id="containerSecondText">
-                Встречу вас на машине после длительного перелёта. Качественный
-                подбор места и локации для вашей съемки. При необходимости
-                всегда возможно прерваться на обед/ужин.Более 50 фотографий на
-                выходе с обработкой и замечательные впечатления о Дубае !
+                Встречу вас на машине после длительного перелёта. <br />
+                Качественный подбор места и локации для вашей съемки. <br />
+                При необходимости всегда возможно прерваться на обед/ужин.
+                <br />Более 50 фотографий на выходе с обработкой и замечательные
+                впечатления о Дубае !
               </span>
             </div>
             <span
@@ -187,7 +251,7 @@
             >
               Читать еще
             </span>
-            <div class="line"></div>
+            <div class="line desktop"></div>
           </div>
         </div>
         <div class="containerForOrganizer">
@@ -225,51 +289,75 @@
           Доступная съемка <br />
           в ближайшее время:
         </div>
-        <table class="tableOrders">
+        <table>
           <thead>
             <tr>
-              <td class="borderTable">
+              <td class="titleTable">
                 Пятница,&nbsp;
                 <div class="date">14</div>
                 &nbsp; сентября
                 <img
                   src="./source/img/calendar.svg"
                   alt="calendar"
-                  class="calendarOrders"
+                  class="calendarOrders desktop"
                 />
               </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="borderTable">
+              <td>
                 <div class="containerDateOrder">
                   <div class="timeOrder">15:00 - 18:00</div>
-                  <div class="priceOrder">1500₽</div>
+                  <div class="priceOrder desktop">1500₽</div>
+                  <div class="priceOrder mobile">850$</div>
                   <div class="freePlacesOrder">Осталось — 1 место</div>
                 </div>
                 <div class="btnChooseOrder" onclick="MakeOrder()">Выбрать</div>
               </td>
             </tr>
             <tr>
-              <td>
+              <td class="withOutBorder">
                 <div class="containerDateOrder">
                   <div class="timeOrder">19:00 - 22:00</div>
-                  <div class="priceOrder">1500₽</div>
+                  <div class="priceOrder desktop">1500₽</div>
+                  <div class="priceOrder mobile">850$</div>
                   <div class="freePlacesOrder">Осталось — 1 место</div>
                 </div>
                 <div class="btnChooseOrder" onclick="MakeOrder()">Выбрать</div>
               </td>
             </tr>
             <tr class="tableReview">
-              <td class="flexStartPosition">
-                <span class="listPossibilities">
+              <td class="flexStartPosition withOutBorder">
+                <span class="listPossibilities desktop">
                   <img
                     src="./source/img/cupWithStars.png"
                     alt="cup with stars"
                   />
-                  <div class="ratingText">Более 50 отзывов с оценкой</div>
-                  <img src="./source/img/fiveStars.png" alt="five stars" />
+                  <div class="ratingText">
+                    Более <strong>50</strong> отзывов с оценкой
+                  </div>
+                  <img
+                    class="stars"
+                    src="./source/img/fiveStars.png"
+                    alt="five stars"
+                  />
+                </span>
+                <span class="listPossibilities mobile">
+                  <img
+                    src="./source/img/cupWithStars.png"
+                    alt="cup with stars"
+                  />
+                  <div class="mobileContainerFeedBack">
+                    <div class="ratingText" id="ratingText">
+                      Более <strong>150</strong> отзывов с оценкой
+                    </div>
+                    <img
+                      class="stars"
+                      src="./source/img/fiveStars.png"
+                      alt="five stars"
+                    />
+                  </div>
                 </span>
               </td>
             </tr>
@@ -278,8 +366,7 @@
       </div>
       <div class="cointainerForMap">
         <!-- Container for map -->
-        <!-- <img class="map" src="./source/img/map.png" alt="Map" /> -->
-        <div class="map">
+        <div class="map desktop">
           <script
             type="text/javascript"
             charset="utf-8"
@@ -287,8 +374,16 @@
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3504d32029d72e6496ac1e84c52464635143ef01d76505013dd359d510a8e914&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true"
           ></script>
         </div>
+        <div class="map mobile">
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3504d32029d72e6496ac1e84c52464635143ef01d76505013dd359d510a8e914&amp;width=100%25&amp;height=423&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
 
-        <div class="mapList">
+        <div class="mapList desktop">
           <div class="mapLine">
             <div class="numberLine">1</div>
             <div class="mapItem">
@@ -314,14 +409,14 @@
             <div class="avatarOrganizer" id="mapListAvatar"></div>
             <div class="mapItem">
               <div class="itemHead">Мария Иванова</div>
-              <div id="itemPhotographer">Фотограф</div>
+              <div class="itemPhotographer">Фотограф</div>
               <div id="mapListInfo">
-                <div id="itemPhotographer">Фотограф</div>
-                <div id="itemPhotographer">Фотограф</div>
-                <div id="itemPhotographer">Фотограф</div>
+                <div class="itemPhotographer">Фотограф</div>
+                <div class="itemPhotographer">Фотограф</div>
+                <div class="itemPhotographer">Фотограф</div>
               </div>
               <div
-                id="itemShowMoreInfo"
+                class="itemShowMoreInfo"
                 onclick="showMoreinf()"
                 data-parent="mapListInfo"
                 data-text-show="Показать больше информации"
@@ -332,23 +427,98 @@
             </div>
           </div>
         </div>
+        <div class="mapListSlider mobile">
+          <div class="containerMapSlider">
+            <div class="slider">
+              <img
+                class="arrowSlider"
+                src="./source/img/arrow.svg"
+                alt="Arrow"
+                onclick="activateSlider()"
+                data-doing="-1"
+              />
+              <div class="displayToSlide" data-current-position="1">
+                <div class="itemSlide" data-id="1">
+                  <div class="numberLine">1</div>
+                  <div class="itemHead">Где встречаемся?</div>
+                  <div class="item">Москва</div>
+                </div>
+                <div class="itemSlide" data-id="2">
+                  <div class="numberLine">2</div>
+                  <div class="itemHead">Время съемки</div>
+                  <div class="item">3 часа</div>
+                </div>
+                <div class="itemSlide" data-id="3">
+                  <div class="numberLine">3</div>
+                  <div class="itemHead">Мест осталось:</div>
+                  <div class="item">2 места</div>
+                </div>
+              </div>
+
+              <img
+                class="arrowSlider reverse"
+                src="./source/img/arrow.svg"
+                alt="Arrow"
+                onclick="activateSlider()"
+                data-doing="1"
+              />
+            </div>
+            <div class="points">
+              <div class="point activePoint" id="point1"></div>
+              <div class="point" id="point2"></div>
+              <div class="point" id="point3"></div>
+            </div>
+            <div class="mapLine" id="mobileMapLine">
+              <div class="avatarOrganizer" id="mobileAvatar"></div>
+              <div class="mapItem">
+                <div class="itemHead">Мария Иванова</div>
+                <div class="itemPhotographer">Фотограф</div>
+                <div id="mapListInfoMobile">
+                  <div class="itemPhotographer">Фотограф</div>
+                  <div class="itemPhotographer">Фотограф</div>
+                  <div class="itemPhotographer">Фотограф</div>
+                </div>
+                <div
+                  class="itemShowMoreInfo"
+                  onclick="showMoreinf()"
+                  data-parent="mapListInfoMobile"
+                  data-text-show="Показать больше информации о фотографе"
+                  data-text-close="Скрыть информацию"
+                >
+                  Показать больше информации о фотографе
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="containerReview">
-        <div class="title">Отзывы:</div>
+        <div class="title">
+          Отзывы
+          <span class="desktop">:</span>
+        </div>
         <div class="reviews">
           <div>
             <div class="review">
-              <div class="avatar">
+              <div class="avatar desktop">
                 <img src="./source/img/review1.svg" alt="Avatar Review" />
               </div>
               <div class="bodyReview">
+                <img
+                  src="./source/img/review1.svg"
+                  alt="Avatar Review"
+                  class="avatarMobile mobile"
+                />
                 <div class="nameReviewer">Валерия Антонова</div>
                 <div class="additionalInfo">Арт-директор</div>
                 <div class="gradeReview">
                   <img src="./source/img/fiveStars.png" alt="five stars" />
-                  <div class="checkMark">
+                  <div class="checkMark desktop">
                     Супер! Я бы заказала съемку снова!
                   </div>
+                </div>
+                <div class="checkMark mobile">
+                  Супер! Я бы заказала съемку снова!
                 </div>
                 <div class="textReview">
                   Хотим выразить огромную благодарность вашей компании! Получили
@@ -359,18 +529,27 @@
                 <div class="lineReview"></div>
               </div>
             </div>
+
             <div class="review">
-              <div class="avatar">
+              <div class="avatar desktop">
                 <img src="./source/img/review2.svg" alt="Avatar Review" />
               </div>
               <div class="bodyReview">
+                <img
+                  src="./source/img/review2.svg"
+                  alt="Avatar Review"
+                  class="avatarMobile mobile"
+                />
                 <div class="nameReviewer">Виталий Петров</div>
                 <div class="additionalInfo">Фотограф</div>
                 <div class="gradeReview">
                   <img src="./source/img/fiveStars.png" alt="five stars" />
-                  <div class="checkMark">
+                  <div class="checkMark desktop">
                     Супер! Я бы заказала съемку снова!
                   </div>
+                </div>
+                <div class="checkMark mobile">
+                  Супер! Я бы заказала съемку снова!
                 </div>
                 <div class="textReview">
                   Восторг! :) Очень понравилось :) Захватили последний теплый,
@@ -382,18 +561,26 @@
                 <div class="lineReview"></div>
               </div>
             </div>
-            <div class="review">
-              <div class="avatar">
+            <div class="review desktop">
+              <div class="avatar desktop">
                 <img src="./source/img/review3.svg" alt="Avatar Review" />
               </div>
               <div class="bodyReview">
+                <img
+                  src="./source/img/review3.svg"
+                  alt="Avatar Review"
+                  class="avatarMobile mobile"
+                />
                 <div class="nameReviewer">Джим Керри</div>
                 <div class="additionalInfo"></div>
                 <div class="gradeReview">
                   <img src="./source/img/fiveStars.png" alt="five stars" />
-                  <div class="checkMark">
+                  <div class="checkMark desktop">
                     Супер! Я бы заказала съемку снова!
                   </div>
+                </div>
+                <div class="checkMark mobile">
+                  Супер! Я бы заказала съемку снова!
                 </div>
                 <div class="textReview">
                   Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели
@@ -404,7 +591,7 @@
                   Но все равно приятно. Короче, Презентстар – проверено. Оценка:
                   пять!
                 </div>
-                <div class="dateReview">11 Апреля, 2019г.</div>
+                <div class="dateReview">19 Апреля, 2019г.</div>
                 <div class="lineReview"></div>
               </div>
             </div>
@@ -412,39 +599,25 @@
 
           <div id="reviews">
             <div class="review">
-              <div class="avatar">
-                <img src="./source/img/review1.svg" alt="Avatar Review" />
-              </div>
-              <div class="bodyReview">
-                <div class="nameReviewer">Валерия Антонова</div>
-                <div class="additionalInfo">Арт-директор</div>
-                <div class="gradeReview">
-                  <img src="./source/img/fiveStars.png" alt="five stars" />
-                  <div class="checkMark">
-                    Супер! Я бы заказала съемку снова!
-                  </div>
-                </div>
-                <div class="textReview">
-                  Хотим выразить огромную благодарность вашей компании! Получили
-                  море ощущений, все прошло просто замечательно. Фотки
-                  получились великолепные, отдельное спасибо фотографу!
-                </div>
-                <div class="dateReview">27 Апреля, 2019г.</div>
-                <div class="lineReview"></div>
-              </div>
-            </div>
-            <div class="review">
-              <div class="avatar">
+              <div class="avatar desktop">
                 <img src="./source/img/review2.svg" alt="Avatar Review" />
               </div>
               <div class="bodyReview">
+                <img
+                  src="./source/img/review2.svg"
+                  alt="Avatar Review"
+                  class="avatarMobile mobile"
+                />
                 <div class="nameReviewer">Виталий Петров</div>
                 <div class="additionalInfo">Фотограф</div>
                 <div class="gradeReview">
                   <img src="./source/img/fiveStars.png" alt="five stars" />
-                  <div class="checkMark">
+                  <div class="checkMark desktop">
                     Супер! Я бы заказала съемку снова!
                   </div>
+                </div>
+                <div class="checkMark mobile">
+                  Супер! Я бы заказала съемку снова!
                 </div>
                 <div class="textReview">
                   Восторг! :) Очень понравилось :) Захватили последний теплый,
@@ -457,17 +630,56 @@
               </div>
             </div>
             <div class="review">
-              <div class="avatar">
+              <div class="avatar desktop">
+                <img src="./source/img/review1.svg" alt="Avatar Review" />
+              </div>
+              <div class="bodyReview">
+                <img
+                  src="./source/img/review1.svg"
+                  alt="Avatar Review"
+                  class="avatarMobile mobile"
+                />
+                <div class="nameReviewer">Валерия Антонова</div>
+                <div class="additionalInfo">Арт-директор</div>
+                <div class="gradeReview">
+                  <img src="./source/img/fiveStars.png" alt="five stars" />
+                  <div class="checkMark desktop">
+                    Супер! Я бы заказала съемку снова!
+                  </div>
+                </div>
+                <div class="checkMark mobile">
+                  Супер! Я бы заказала съемку снова!
+                </div>
+                <div class="textReview">
+                  Хотим выразить огромную благодарность вашей компании! Получили
+                  море ощущений, все прошло просто замечательно. Фотки
+                  получились великолепные, отдельное спасибо фотографу!
+                </div>
+                <div class="dateReview">27 Апреля, 2019г.</div>
+                <div class="lineReview"></div>
+              </div>
+            </div>
+
+            <div class="review desktop">
+              <div class="avatar desktop">
                 <img src="./source/img/review3.svg" alt="Avatar Review" />
               </div>
               <div class="bodyReview">
+                <img
+                  src="./source/img/review3.svg"
+                  alt="Avatar Review"
+                  class="avatarMobile mobile"
+                />
                 <div class="nameReviewer">Джим Керри</div>
                 <div class="additionalInfo"></div>
                 <div class="gradeReview">
                   <img src="./source/img/fiveStars.png" alt="five stars" />
-                  <div class="checkMark">
+                  <div class="checkMark desktop">
                     Супер! Я бы заказала съемку снова!
                   </div>
+                </div>
+                <div class="checkMark mobile">
+                  Супер! Я бы заказала съемку снова!
                 </div>
                 <div class="textReview">
                   Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели
@@ -478,7 +690,7 @@
                   Но все равно приятно. Короче, Презентстар – проверено. Оценка:
                   пять!
                 </div>
-                <div class="dateReview">11 Апреля, 2019г.</div>
+                <div class="dateReview">19 Апреля, 2019г.</div>
                 <div class="lineReview"></div>
               </div>
             </div>
@@ -503,17 +715,21 @@
           <img src="./source/img/vk.svg" alt="VK" />
           <img src="./source/img/facebook.svg" alt="facebook" />
           <img src="./source/img/instragram.svg" alt="instragram" />
-          <span class="language">RU</span>
+          <span class="language desktop">RU</span>
         </div>
       </div>
       <div class="footer">
         <div class="paymentSystem">
           <img src="./source/img/MC.svg" alt="Master Card" />
           <img src="./source/img/VISA.svg" alt="VISA" />
+          <img src="./source/img/pp.svg" alt="Pay Pal" class="mobile" />
+          <span class="language mobile">RU</span>
         </div>
+
         <div class="footerText">
           Тех. поддержка:
-          <a href="tel:88007000000">8(800)700-00-00</a> <br />
+          <a href="tel:88007000000">8(800)700-00-00</a> <br class="desktop" />
+          <div class="mobile mobileSpace"></div>
           © 2018 HELYFLY. All Rights Reserved.
         </div>
       </div>
