@@ -1534,6 +1534,7 @@ input::-webkit-inner-spin-button {
         height: 50px;
         font-size: 14px;
         font-weight: normal;
+        margin: 20px auto min(25%, 60px);
     }
 }
 @media screen and (max-width: 1440px) {
