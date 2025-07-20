@@ -166,9 +166,12 @@ header{
     letter-spacing: 0px;
     transition: all .4s;
 }
-.orderPlace:hover{
+@media (hover:hover){
+    .orderPlace:hover{
     opacity: 0.5;
 }
+}
+
     /* Preview Helicopter ENDS*/
 
     /* Main Content */
@@ -286,10 +289,13 @@ header{
     font-weight: 500;
     font-size: 17px;
 }
-.showAll:hover{
+@media (hover:hover){
+    .showAll:hover{
     opacity: .5;
     transition: .2 ease-in-out;
 }
+}
+
 .showAll::after{
     content:url(./source/img/arrow.svg);
     margin-left: 12px;
@@ -305,10 +311,13 @@ header{
     font-weight: 500;
     font-size: 17px;
 }
-.hideAll:hover{
+@media (hover:hover){
+    .hideAll:hover{
     opacity: .5;
     transition: all .2 ease-in-out;
 }
+}
+
 .hideAll::after{
     display: inline-block;
     content:url(./source/img/arrow.svg);
@@ -373,9 +382,12 @@ header{
     margin-top: 7px;
     transition: all .4s;
 }
-.readAll:hover{
+@media (hover:hover){
+    .readAll:hover{
     opacity: .5;
+    }
 }
+
 .readAll::after{
     display: inline-block;
     content:url(./source/img/arrow.svg);
@@ -416,7 +428,8 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-    transform: translateX(-15px);
+    margin-left: 15px;
+    /* transform: translateX(-15px); */
 }
 .avatarOrganizer{
     display: block;
@@ -458,9 +471,12 @@ header{
     cursor: pointer;
     transition: all .4s;
 }
-.showMoreInf:hover{ 
+@media (hover:hover){
+   .showMoreInf:hover{ 
     opacity: .5;
+    } 
 }
+
 .like{
     position: absolute;
 }
@@ -548,10 +564,13 @@ tbody tr{
 
     cursor: pointer;
 }
-.btnChooseOrder:hover{
+@media (hover:hover){
+   .btnChooseOrder:hover{
     opacity: .5;
     transition: all .2s;
+    } 
 }
+
         /* Free Order */
         /* Map */
 .cointainerForMap{
@@ -625,9 +644,12 @@ tbody tr{
     cursor: pointer;
     transition: all .4s;
 }
-.itemShowMoreInfo:hover{
+@media (hover:hover){
+   .itemShowMoreInfo:hover{
     opacity: 0.5;
+    } 
 }
+
 #mapListAvatar{
     min-width: 61px;
     min-height: 61px;
@@ -966,10 +988,13 @@ tbody tr{
 
     transition: all .4s;
 }
-.makeOrderButton:hover{
-    background: rgba(252, 155, 9, 0.6);
-    color: rgba(0, 0, 0, 0.477);
+@media (hover:hover){
+    .makeOrderButton:hover{
+        background: rgba(252, 155, 9, 0.6);
+        color: rgba(0, 0, 0, 0.477);
+    }
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
@@ -996,7 +1021,7 @@ input::-webkit-inner-spin-button {
         max-width: 257px;
     }
 }
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     /* Header */
     body{
         overflow-x: hidden;
@@ -1187,15 +1212,15 @@ input::-webkit-inner-spin-button {
         align-items: center;
         margin: 0 4vw 0 5.5vw;
     }
-    .containerForProfile{
-        transform: translateX(31px);
-    }
     .like{
-        right: 6vw;
-        position:unset;
+        position: absolute;
+        transform: translateX(min(25vw, 90px));
     }
     .avatarOrganizer{ 
         margin-bottom: 22px;
+    }
+    .containerForProfile{
+        margin-left: 0;
     }
     .containerForProfile > .showMoreInf{
         margin-bottom: 25px;
@@ -1537,13 +1562,56 @@ input::-webkit-inner-spin-button {
         margin: 20px auto min(30%, 70px);
     }
 }
-@media screen and (max-width: 1440px) {
+@media (min-width:800px) and (max-width:940px){
+    .photos.desktop {
+        justify-content: center;
+        max-width: 276px;
+        margin: 0 auto;
+    }
+}
+@media (min-width:800px) and (max-width:1439px){
+    table{
+        width: 100%;
+    }
+    td,th{
+        width: 100%;
+        padding: 0;
+    }
+    td.titleTable{
+        width: 100%;
+        padding: 20px 0 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    tbody  td{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0 30px 0;
+    }
+    .flexStartPosition{
+        align-items: flex-start;
+    }
+    tbody td > * {
+        margin-left: 20px;
+    }
+    .btnChooseOrder{
+        margin-top: 20px;
+    }
+    
+}
+@media (min-width:1400px) and (max-width: 1870px){
+    .hideImgs{
+        display: none;
+    }
+}
+@media (max-width: 1440px) {
     #containerDialog {
         align-items: flex-start;
         overflow-y: scroll;
     }
 }
-@media screen and (min-height: 880px) {
+@media (min-height: 880px) {
     #containerDialog{
         align-items: center;
         overflow-y: hidden;
